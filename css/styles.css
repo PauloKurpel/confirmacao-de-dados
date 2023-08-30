@@ -1,0 +1,223 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(/img/back.jpg);
+    background-size: cover;
+    margin: 0;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    background: transparent;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(240, 255, 255, 0.8);
+    pointer-events: none;
+}
+
+/* Estilo da Barra de Ferramentas */
+.toolbar {
+    background: rgba(31, 58, 43, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    text-transform: uppercase;
+}
+
+
+/* Estilo do Título */
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilo da Sidebar */
+.sidebar {
+    width: 50%; /* Preencher 70% da tela */
+    margin: 0 auto; /* Centralizar horizontalmente */
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 0 0 5px 0;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-section {
+    margin-bottom: 0;
+}
+
+/* Estilo da Div de Seleção de Motivo */
+.motivo-box {
+    width: 100%; /* Preencher 100% da largura da .sidebar */
+    padding: 10px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+/* Estilo do Conteúdo Principal */
+.main-content {
+    background: rgba(31, 58, 43, 0.9);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px;
+}
+
+/* Estilo do Select */
+select {
+    width: 100%; /* Ocupar 100% da largura da .motivo-box */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgba(32, 138, 129, 0.5), rgba(46, 201, 189, 0.5));
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+}
+
+/* Estilo das Opções do Select */
+option {
+    background: #375e5b;
+    color: white;
+    border-radius: 5px;
+    text-align: left;
+}
+
+option:hover {
+    background: #375e5b;
+}
+
+/* Estilo das Divs de Card */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    width: calc(50% - 10px);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bullet-list {
+    list-style-type: disc;
+    padding-left: 20px; /* Ajuste o espaçamento à sua preferência */
+}
+
+.bullet-list li {
+    margin-bottom: 10px; /* Ajuste o espaçamento entre os parágrafos */
+}
+
+/* Estilo dos Títulos dos Cards */
+.card h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilo do Container de Cards */
+.card-container {
+    display: flex; /* Usar flexbox para alinhar os cards na mesma linha */
+    align-items: stretch; /* Garantir alturas iguais dos cards */
+    margin-top: 20px; /* Espaçamento acima */
+}
+
+/* Estilo dos Cards Horizontais */
+.horizontal-card {
+    /* background: linear-gradient(45deg, rgb(32, 138, 129), rgb(46, 201, 189)); */
+    background: linear-gradient(45deg, rgba(32, 138, 129, 0.5), rgba(46, 201, 189, 0.5));
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px); /* Comprimento ajustado */
+    display: inline-block;
+    vertical-align: top;
+    /* text-align: center; */
+    transition: transform 0.2s;
+}
+
+.horizontal-card:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, rgba(138, 32, 32, 0.5), rgba(201, 46, 46, 0.5));
+}
+
+.horizontal-card-op {
+    /* background: linear-gradient(45deg, rgb(32, 138, 129), rgb(46, 201, 189)); */
+    background: linear-gradient(45deg, rgba(32, 138, 129, 0.5), rgba(46, 201, 189, 0.5));
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px); /* Comprimento ajustado */
+    display: inline-block;
+    vertical-align: top;
+    /* text-align: center; */
+    transition: transform 0.2s;
+}
+
+.horizontal-card-op:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, rgba(138, 134, 32, 0.5), rgba(201, 196, 46, 0.5));
+}
+
+/* Estilo do Ícone no Canto Superior Direito */
+.icon-top-right {
+    float: right;
+    top: 10px;
+    right: 10px;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilo da Div que representa a linha */
+.card-divider {
+    width: 5%;
+    height: 20px;
+    /* background: linear-gradient(45deg, #c4cdfa, #a79aff); */
+    background: transparent;
+    border: none;
+    margin: auto; /* Espaçamento acima e abaixo da linha, e alinhamento no meio */
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+/* barra de rolagem vertical */
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #241f1f;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: rgba(31, 58, 43, 0.6);  /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+
+/* Adicione estilos de transição */
+#loadedContent {
+    opacity: 0; /* Começa com opacidade 0 para esconder o conteúdo */
+    transition: opacity 0.9s ease; /* Adiciona uma transição suave de opacidade */
+  }
+  
