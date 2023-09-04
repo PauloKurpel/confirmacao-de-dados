@@ -73,6 +73,14 @@ h1 {
     margin: 15px;
 }
 
+.aviso {
+    border-radius: 5px;
+    margin: 15px;
+    color: #dad6d6;
+    font-size: 13px;
+    font-weight: bold;
+}
+
 /* Estilo do Select */
 select {
     width: 100%; /* Ocupar 100% da largura da .motivo-box */
@@ -156,6 +164,26 @@ option:hover {
     background: linear-gradient(45deg, rgba(138, 32, 32, 0.5), rgba(201, 46, 46, 0.5));
 }
 
+/* Estilo dos Cards Horizontais */
+.horizontal-card-tc {
+    /* background: linear-gradient(45deg, rgb(32, 138, 129), rgb(46, 201, 189)); */
+    background: linear-gradient(45deg, rgba(32, 138, 129, 0.5), rgba(46, 201, 189, 0.5));
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 10px); /* Comprimento ajustado */
+    display: inline-block;
+    vertical-align: top;
+    /* text-align: center; */
+    transition: transform 0.2s;
+}
+
+.horizontal-card-tc:hover {
+    transform: scale(1.02);
+    background: linear-gradient(45deg, rgba(138, 32, 32, 0.5), rgba(201, 46, 46, 0.5));
+}
+
 .horizontal-card-op {
     /* background: linear-gradient(45deg, rgb(32, 138, 129), rgb(46, 201, 189)); */
     background: linear-gradient(45deg, rgba(32, 138, 129, 0.5), rgba(46, 201, 189, 0.5));
@@ -221,3 +249,13 @@ body::-webkit-scrollbar {
     transition: opacity 0.9s ease; /* Adiciona uma transição suave de opacidade */
   }
   
+
+  /* Seu arquivo CSS personalizado */
+  .custom-warning-icon {
+    font-size: 22px; /* Tamanho do ícone */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 75px; /* Largura do ícone */
+    height: 75px; /* Altura do ícone */
+    border: 5px solid #FFC107; /* Espessura e cor da borda */
+    border-radius: 70%; /* Para torná-lo mais "gordinho" */
+}

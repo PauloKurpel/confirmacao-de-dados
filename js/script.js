@@ -48,3 +48,57 @@ function ordenar() {
       select.appendChild(option);
   });
 }
+
+// Este código será executado quando a página terminar de carregar
+document.addEventListener("DOMContentLoaded", function() {
+  // Use o SweetAlert para exibir um pop-up de aviso
+  // Swal.fire({
+  //     // title: 'ATENÇÃO',
+  //     text: 'As orientações abaixo se referem apenas aos dados que precisam ser confirmados e não substituem as demais orientações sobre o processo nos artigos correspondentes.',
+  //     // iconHtml: '<i class="fa-solid fa-circle-info"></i>',
+  //     icon: 'warning',
+  //     iconColor: 'orange',
+  //     width: 700,
+  //     confirmButtonText: 'Entendido',
+  //     confirmButtonColor: 'rgba(31, 58, 43, 0.9)'
+  // });
+
+  // Swal.fire({
+  //   text: 'As orientações abaixo se referem apenas aos dados que precisam ser confirmados e não substituem as demais orientações sobre o processo nos artigos correspondentes.',
+  //   width: 800,
+  //   icon: 'warning',
+  //   iconColor: 'orange',
+  //   customClass: {
+  //       icon: 'custom-warning-icon' // Aplica o estilo personalizado ao ícone de aviso
+  //   },
+  //   timer: 5000,
+  //   timerProgressBar: true,
+  //     didOpen: (toast) => {
+  //       toast.addEventListener('mouseenter', Swal.stopTimer)
+  //       toast.addEventListener('mouseleave', Swal.resumeTimer)
+  //   }
+  // });
+
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top',
+    width: 800,
+    showConfirmButton: false,
+    timer: 5000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  
+  Toast.fire({
+    text: 'As orientações abaixo se referem apenas aos dados que precisam ser confirmados e não substituem as demais orientações sobre o processo nos artigos correspondentes.',
+    icon: 'warning',
+    iconColor: '#FFC107',
+    customClass: {
+        icon: 'custom-warning-icon' // Aplica o estilo personalizado ao ícone de aviso
+    }
+  })
+
+});
