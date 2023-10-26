@@ -186,6 +186,25 @@ option:hover {
     transition: transform 0.2s;
 }
 
+.horizontal-card-tk {
+    /* background: linear-gradient(45deg, rgb(32, 138, 129), rgb(46, 201, 189)); */
+    background: linear-gradient(45deg, rgba(32, 138, 129, 0.5), rgba(46, 201, 189, 0.5));
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 10px); /* Comprimento ajustado */
+    display: inline-block;
+    vertical-align: top;
+    /* text-align: center; */
+    transition: transform 0.2s;
+}
+
+.horizontal-card-tk:hover {
+    transform: scale(1.02);
+    /* background: linear-gradient(45deg, rgba(138, 32, 32, 0.5), rgba(201, 46, 46, 0.5)); */
+}
+
 .horizontal-card-tc:hover {
     transform: scale(1.02);
     background: linear-gradient(45deg, rgba(138, 32, 32, 0.5), rgba(201, 46, 46, 0.5));
